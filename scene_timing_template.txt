@@ -1,0 +1,33 @@
+Retro Terminal Timing Template (90s total, 12 scenes)
+Use these values in TIMING_OVERRIDES inside build_retro_terminal.jsx
+Scene indices below match the parsed order in Untitled-1.txt (1-based).
+
+ 1:  start 0.00   end 7.50    SCENE 1
+ 2:  start 7.50   end 15.50   SCENE 2 BOOT
+ 3:  start 15.50  end 23.50   SCENE 3 LAUNCH
+ 4:  start 23.50  end 30.00   SCENE 4 DROPPING
+ 5:  start 30.00  end 33.00   SCENE 4_1 BLACKOUT (3 s)
+ 6:  start 33.00  end 40.50   SCENE 5 OPENING
+ 7:  start 40.50  end 49.00   SCENE 6 BATTLE
+ 8:  start 49.00  end 57.00   SCENE 7 BACK (REAR VIEW)
+ 9:  start 57.00  end 64.50   SCENE 8 FPS (HUD FOCUS)
+10:  start 64.50  end 72.50   SCENE 9
+11:  start 72.50  end 82.00   SCENE 10 LOSING BATTLE
+12:  start 82.00  end 90.00   SCENE 11 SMOKE AND ASH
+
+JSX snippet:
+var TIMING_OVERRIDES = {
+   1: { start: 0.00,  end: 7.50  }, // SCENE 1
+   2: { start: 7.50,  end: 15.50 }, // SCENE 2 BOOT
+   3: { start: 15.50, end: 23.50 }, // SCENE 3 LAUNCH
+   4: { start: 23.50, end: 30.00 }, // SCENE 4 DROPPING
+   5: { start: 30.00, end: 33.00 }, // SCENE 4_1 BLACKOUT (3 s)
+   6: { start: 33.00, end: 40.50 }, // SCENE 5 OPENING
+   7: { start: 40.50, end: 49.00 }, // SCENE 6 BATTLE
+   8: { start: 49.00, end: 57.00 }, // SCENE 7 BACK
+   9: { start: 57.00, end: 64.50 }, // SCENE 8 FPS
+  10: { start: 64.50, end: 72.50 }, // SCENE 9
+  11: { start: 72.50, end: 82.00 }, // SCENE 10 LOSING BATTLE
+  12: { start: 82.00, end: 90.00 }  // SCENE 11 SMOKE AND ASH
+};
+

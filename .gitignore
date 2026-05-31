@@ -1,0 +1,31 @@
+# Adobe After Effects project files
+*.aep
+*.aepx
+Adobe After Effects Auto-Save/
+*.aep Logs/
+
+# Media / exports (keep locally, not in repo)
+*.mp4
+*.mov
+*.avi
+export/
+
+# Installers & downloaded artifacts
+*.exe
+Joos.v*.zip
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Temp / scratch / secrets
+temp
+temp/
+*.tmp
+*.log
